@@ -1,0 +1,43 @@
+sourceSets { 
+	 main { 
+	 	java{
+	 		srcDir "$projectDir/src"
+	 	}
+	 	resources{
+		 	srcDir "$projectDir/site-src"
+		 }
+	 } 
+ 	}
+ 	sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+ 	tasks.withType(JavaCompile) {  
+        options.encoding = "UTF-8"  
+    } 
+ repositories { 
+	 flatDir(dirs: "../global/lib") 
+ } 
+
+dependencies {
+	//compile project(':cj.ultimate');
+	//compile project(':cj.studio.ecm.corelib');
+	//compile project(':cj.studio.ecm.plus');
+	//compile project(':cj.studio.ecm.net');
+	//compile project(":cj.lns.platform:cj.lns.chip.sos.cube");
+	compile fileTree(dir: '../global/lib', includes: ['*.jar'])
+	compile fileTree(dir: '../global/cjtools', includes: ['*.jar'])
+	compile('org.mongodb:mongo-java-driver:3.0.2');
+	//compile group: 'commons-io', name: 'commons-io', version: '2.5'
+	compile fileTree('src/cj/references')
+	compile fileTree('src/cj/refembeds')
+}
+ 	task releaseToTestNeuron(type: Copy) {
+ 	dependsOn "build"
+ 	 from 'build/libs/'
+	     into '../../build/neuron-csc/apps/cj.lns.chip.sos.csc.deploy'
+	     include '**/*.jar'
+ 	}
+ 	
+ 	 task release(type: Copy) {
+     dependsOn "releaseToTestNeuron"
+ 	}
+ 	

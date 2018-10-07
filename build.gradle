@@ -51,7 +51,11 @@ sns.dependsOn ':cj.studio.ecm.sns:release'
 sns.dependsOn ':cj.lns.chip.sns.server.device:release'
 sns.dependsOn ':cj.lns.chip.sns.server.im:release'
 sns.dependsOn ':cj.lns.chip.sns.server.fs:release'
+sns.dependsOn ':cj.lns.chip.sos.csc.helloworld:release'
+sns.dependsOn ':cj.lns.chip.sos.csc.deploy:release'
+sns.dependsOn ':cj.lns.chip.sos.csc.example:release'
 tasks.getByPath(':cj.lns.chip.sns.server.device:release').mustRunAfter tasks.getByPath(':cj.studio.ecm.sns:release')
 tasks.getByPath(':cj.lns.chip.sns.server.im:release').mustRunAfter tasks.getByPath(':cj.studio.ecm.sns:release')
 tasks.getByPath(':cj.lns.chip.sns.server.fs:release').mustRunAfter tasks.getByPath(':cj.studio.ecm.sns:release')
+
 

@@ -1,0 +1,41 @@
+{
+	entryPoint : {
+		activators : []
+	},
+	assemblyInfo : {
+		assemblyTitle : "helloworld",
+		assemblyResource:"resource=/web",
+		assemblyDescription : "喂",
+		assemblyConfiguration : "",
+		assemblyCompany : "逻辑界公司出品",
+		assemblyProduct : "cj.cloud.computer.helloworld",
+		assemblyCopyright : "Copyright   2011",
+		assemblyTrademark : "",
+		assemblyCulture : "",
+		guid : "B2441D22-9F0A-333F-8307-A22F7E0C8F3F",
+		assemblyVersion : "1.0.0.0",
+		assemblyFileVersion : "1.0.0.0",
+		assemblyIcon:"app.svg"
+	},
+	global:{
+		default:"zh_CN",
+		desc:"如果系统环境要求各芯片采用的语言本芯片没有，则芯片可采用默认语言"
+		},
+	serviceContainer : {
+		name : "netContainer",
+		switchFilter:"off",
+		jss:[{
+			module:"csc",
+			package:"widgets",
+			unzip:"true",
+			searchMode:"link",
+			extName:".jss.js"
+		}],
+		scans : [{
+					package : "cj.lns.chip.sos.csc.helloworld",
+					extName : ".class|.json|.xml",
+					exoterical:"true"
+				}]
+
+	}
+}

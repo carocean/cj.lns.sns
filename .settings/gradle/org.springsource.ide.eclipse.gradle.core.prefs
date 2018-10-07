@@ -1,5 +1,5 @@
 #org.springsource.ide.eclipse.gradle.core.preferences.GradleProjectPreferences
-#Sun Oct 07 10:41:10 CST 2018
-build.family.org.gradle.tooling.model.eclipse.HierarchicalEclipseProject=;cj.lns.chip.sns.server.device;cj.lns.chip.sns.server.fs;cj.lns.chip.sns.server.im;cj.studio.ecm.sns;
+#Sun Oct 07 11:06:59 CST 2018
+build.family.org.gradle.tooling.model.eclipse.HierarchicalEclipseProject=;cj.lns.chip.sns.server.device;cj.lns.chip.sns.server.fs;cj.lns.chip.sns.server.im;cj.lns.chip.sos.csc.deploy;cj.lns.chip.sos.csc.example;cj.lns.chip.sos.csc.helloworld;cj.studio.ecm.sns;
 org.springsource.ide.eclipse.gradle.linkedresources=
 org.springsource.ide.eclipse.gradle.rootprojectloc=

@@ -1,0 +1,41 @@
+{
+	entryPoint : {
+		activators : []
+	},
+	assemblyInfo : {
+		assemblyTitle : "deploy",
+		assemblyResource:"resource=/web",
+		assemblyDescription : "部署器",
+		assemblyConfiguration : "",
+		assemblyCompany : "逻辑界公司出品",
+		assemblyProduct : "cj.cloud.computer.deploy",
+		assemblyCopyright : "Copyright   2011",
+		assemblyTrademark : "",
+		assemblyCulture : "",
+		guid : "1A26F6B1-58A7-4C83-A5FA-AB0648237739",
+		assemblyVersion : "1.0.0.0",
+		assemblyFileVersion : "1.0.0.0",
+		assemblyIcon:"app.svg"
+	},
+	global:{
+		default:"zh_CN",
+		desc:"如果系统环境要求各芯片采用的语言本芯片没有，则芯片可采用默认语言"
+		},
+	serviceContainer : {
+		name : "netContainer",
+		switchFilter:"off",
+		jss:[{
+			module:"csc",
+			package:"widgets",
+			unzip:"true",
+			searchMode:"link",
+			extName:".jss.js"
+		}],
+		scans : [{
+					package : "cj.lns.chip.sos.csc.deploy",
+					extName : ".class|.json|.xml",
+					exoterical:"true"
+				}]
+
+	}
+}

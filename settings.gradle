@@ -1,2 +1,3 @@
 
 include "cj.studio.ecm.sns", "cj.lns.chip.sns.server.im", "cj.lns.chip.sns.server.fs","cj.lns.chip.sns.server.device"
+include "cj.lns.chip.sos.csc.deploy","cj.lns.chip.sos.csc.example","cj.lns.chip.sos.csc.helloworld"
