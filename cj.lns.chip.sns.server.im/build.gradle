@@ -1,0 +1,35 @@
+sourceSets { 
+	 main { 
+	 	java{
+	 		srcDir "$projectDir/src"
+	 	}
+	 	resources{
+		 	srcDir "$projectDir/src"
+		 }
+	 } 
+ 	}
+ 	sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+ 	tasks.withType(JavaCompile) {  
+        options.encoding = "UTF-8"  
+    } 
+ repositories { 
+	 flatDir(dirs: "../global/lib") 
+ } 
+
+dependencies {
+	compile fileTree(dir: '../global/lib', includes: ['*.jar'])
+	compile fileTree(dir: '../global/cjtools', includes: ['*.jar'])
+	compile project(':cj.studio.ecm.sns');
+}
+ 	task releaseToNeuron(type: Copy) {
+ 	dependsOn "build"
+ 	 from 'build/libs/'
+	      into '../network/neuron-im/apps/cj.lns.chip.sns.server.im'
+	     include '**/*.jar'
+ 	}
+ 	
+ 	 task release(type: Copy) {
+     dependsOn "releaseToNeuron"
+ 	}
+ 	

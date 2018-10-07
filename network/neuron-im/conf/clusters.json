@@ -1,0 +1,1 @@
+{"network":{"name":"network","alias":"连接到imSite，向上游访问","algorithm":"cjhash","accept":"","channelType":"unicast","match":"none","validDestinations":{"c-im1":{"name":"c-im1","protocol":"rio-tcp","inetHost":"192.168.201.210","port":"18000","props":{"bossThreadCount":"1","heartbeatInterval":"5000","workThreadCount":"0"}}},"invalidDestinations":{}}}

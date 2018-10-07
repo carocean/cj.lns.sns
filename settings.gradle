@@ -1,0 +1,2 @@
+
+include "cj.studio.ecm.sns", "cj.lns.chip.sns.server.im", "cj.lns.chip.sns.server.fs","cj.lns.chip.sns.server.device"

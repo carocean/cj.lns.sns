@@ -1,0 +1,40 @@
+{
+	entryPoint : {
+		activators : []
+	},
+	assemblyInfo : {
+		assemblyTitle : "device",
+		assemblyResource:"resource=/resources",
+		assemblyDescription : "互动社区设备在线服务器",
+		assemblyConfiguration : "",
+		assemblyCompany : "开发者：cj;研发机构：lns平台部",
+		assemblyProduct : "cj.lns.chip.sns.server.device",
+		assemblyCopyright : "Copyright   2011",
+		assemblyTrademark : "",
+		assemblyCulture : "",
+		guid : "C9A434CE-E72F-453C-AA86-D87A779E4C49",
+		assemblyVersion : "1.0.0.0",
+		assemblyFileVersion : "1.0.0.0"
+	},
+	global:{
+		default:"zh_CN",
+		desc:"如果系统环境要求各芯片采用的语言本芯片没有，则芯片可采用默认语言"
+		},
+	serviceContainer : {
+		name : "netContainer",
+		switchFilter:"off",
+		jss:[{
+			module:"sos",
+			package:"cj.lns.chip.sns.server.device.jss",
+			unzip:"true",
+			searchMode:"link",
+			extName:".jss.js"
+		}],
+		scans : [{
+					package : "cj.lns.chip.sns.server.device",
+					extName : ".class|.json",
+					exoterical:"true"
+				}]
+
+	}
+}

@@ -1,0 +1,1 @@
+{"network":{"name":"network","alias":"连上网络以便将fs/im/av等连接起来","algorithm":"cjhash","accept":"","channelType":"unicast","match":"none","validDestinations":{"c-dc1":{"name":"c-dc1","protocol":"rio-tcp","inetHost":"192.168.201.210","port":"13000","useShared":false,"props":{"bossThreadCount":"1","workThreadCount":"4"}}},"invalidDestinations":{}}}

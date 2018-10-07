@@ -1,0 +1,32 @@
+{
+	entryPoint : {
+		activators : []
+	},
+	assemblyInfo : {
+		assemblyTitle : "im",
+		assemblyResource:"resource=/resources",
+		assemblyDescription : "互动社区设备即时推送服务器",
+		assemblyConfiguration : "",
+		assemblyCompany : "开发者：cj;研发机构：lns平台部",
+		assemblyProduct : "cj.lns.chip.sns.server.im",
+		assemblyCopyright : "Copyright   2011",
+		assemblyTrademark : "",
+		assemblyCulture : "",
+		guid : "99EE8AEF-A7B5-47C2-A5AE-101FDF548A45",
+		assemblyVersion : "1.0.0.0",
+		assemblyFileVersion : "1.0.0.0"
+	},
+	global:{
+		default:"zh_CN",
+		desc:"如果系统环境要求各芯片采用的语言本芯片没有，则芯片可采用默认语言"
+		},
+	serviceContainer : {
+		name : "netContainer",
+		scans : [{
+					package : "cj.lns.chip.sns.server.im",
+					extName : ".class|.json",
+					exoterical:"true"
+				}]
+
+	}
+}

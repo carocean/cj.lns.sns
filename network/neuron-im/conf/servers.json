@@ -1,0 +1,1 @@
+{"cloud":{"protocol":"rio-tcp","inetHost":"192.168.201.221","port":"8060","props":{"bossThreadCount":"1","heartbeatInterval":"0","workThreadCount":"4"}}}
