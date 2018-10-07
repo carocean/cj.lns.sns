@@ -33,7 +33,7 @@ dependencies {
  	task releaseToTestNeuron(type: Copy) {
  	dependsOn "build"
  	 from 'build/libs/'
-	     into '../../build/neuron-csc/apps/cj.lns.chip.sos.csc.deploy'
+	     into '../network/neuron-csc/apps/cj.lns.chip.sos.csc.deploy'
 	     include '**/*.jar'
  	}
  	

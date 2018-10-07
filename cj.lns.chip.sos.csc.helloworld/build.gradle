@@ -27,7 +27,7 @@ compile fileTree(dir: '../global/lib', includes: ['*.jar'])
  	task releaseToTestNeuron(type: Copy) {
  	dependsOn "build"
  	 from 'build/libs/'
-	     into '../../build/neuron-csc/apps/cj.lns.chip.sos.csc.helloworld'
+	     into '../network/neuron-csc/apps/cj.lns.chip.sos.csc.helloworld'
 	     include '**/*.jar'
  	}
  	
